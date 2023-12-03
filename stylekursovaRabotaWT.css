@@ -1,29 +1,48 @@
-* {
-    margin: 0; 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
 }
 
-html {
-    height:100%;
-    width: 100%;
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with since img tag has display: inline by default. That prevents width/height/margin/padding from having an effect */
+img,
+picture {
+    max-width: 100%;
+    display: block;
 }
 
 body {
-    height: 100%;
-    width:100%;
-    padding: 10px;
-    background-color:#FFF3DD;
-    color: #5D0F4C;
-    font-family: 'Garamond' serif;
+    font-family: 'Garamond', serif;
     font-size: 16px;
     text-align: center;
+    width:100%;
+    min-width: 360px;
+    height: 100vh;
+    background-color:#FFF3DD;
+    color: #5D0F4C;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: url(imgs/weddingsea.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(10%);
+    position: relative;
+    z-index: 0;
 }
 
 header {
     background: rgb(255,243,221);
     background: radial-gradient(circle, rgba(255,243,221,1) 0%, rgba(226,197,167,1) 64%);
-    height: 100px;
-    padding-top: 0px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -36,21 +55,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-footer a {
-    vertical-align: middle;
-}
-
-.banner {
-    width: 100%;
-    height: 100%;
-    background-image: url(imgs/weddingsea.jpeg);
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(10%);
-    position: relative;
-    z-index: 0;
 }
 
 #startext {
