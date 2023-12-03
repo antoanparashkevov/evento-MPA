@@ -67,7 +67,7 @@ footer {
     z-index: 1;
 }
 
-.logoname img {
+.logoName img {
     max-height: 150px;
     max-width: 150px;
     display: flex;
