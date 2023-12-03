@@ -1,74 +1,112 @@
 <!DOCTYPE html>
 <html lang="bg">
     <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="Пълно описание на страницата / сайта" />
-        <meta name="author" content="Автор на страницата" /> 
-        <meta name="keywords" content="ключови,думи,разделени,със запетаи" />
-        <meta name="googlebot" content="notranslate">
-        <meta name="robots" content="index, follow">
         <title>EventO | Начална страница</title>
+        <meta name="description" content="Пълно описание на страницата / сайта"/>
+        <meta name="author" content="Автор на страницата"/>
+        <meta name="keywords" content="ключови,думи, разделени със запетаи"/>
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="notranslate">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="style.css" media="screen"/>
         <link rel="icon" href="logoicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="style.css" media="screen" />
     </head>
     <body>
-        <header>
-            <div class="logoname">
-                <img src="logo.png"/>
-            </div>
-            <h1>Агенция за събития "EventO"</h1>
-            <nav>
-                <ul class menu>
-                 <li><a href="index.html" title="Начална страница"><strong>Начало</strong></a></li>
-                 <li><a href="about.html" title="Нашата история"><strong>За нас</strong></a></li>
-                 <li><a href="offers.html" title="Услуги и продукти"><strong>Услуги</strong></a></li>
-                 <li><a href="future.html" title="Нашите събития"><strong>Предстоящи събития</strong></a></li>
-                 <li><a href="gallery.html" title="Уловените моменти"><strong>Галерия</strong></a></li>
-                 <li><a href="calender.html" title="Свободни дати"><strong>Календар</strong></a></li>
-                 <li><a href="contacts.html" title="Свържете се с нас"><strong>Контакти</strong></a></li>
-                </ul>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary px-0">
+                <div class="container-fluid">
+                    <img src="logo.png" alt="Logo" class="img-thumbnail me-2" width="80" height="60"/>
+                    <a href="index.html" class="navbar-brand fs-6">Агенция за събития "EventO"</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Начало</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html">За нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="offers.html">Услуги</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="future.html">Предстоящи събития</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="gallery.html">Галерия</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="calender.html">Календар</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="contacts.html">Контакти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <h3>Запознайте се с нас</h3>
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTlN8tqCQpiKoFFQQDNS_nBwfZnHvsG9qotkXOVX-gHqzjzYuyN0pRF06FR_nct9wigrFGx-ELeojdR/embed?start=true&loop=true&delayms=10000" frameborder="0" width="748" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-        <div class="about1">
-            <div class="abouttext">
-                <article>Още от 2006г. агенция за събития "EventO" предлага на своите клиенти креативни идеи, за да осъществи мечтаните от тях събития и да остави спомени, към които те се връщат многократно. Скромният ни екип, който се състои от 12 човека, се грижи за атмосферата, доброто настроение, декорацията и запечатването на моментите по време на събитието и прави така, че клиентите да си тръгват с усмивка. Увеличаването на организираните мероприятия наложи разрастването на екипа още в самото начало и така агенцията се превърна в сплотен и усърден екип, който неуморимо се грижи за най-важните моменти от Вашия живот.</article>
+        <main class="container">
+            <h3>Запознайте се с нас</h3>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTlN8tqCQpiKoFFQQDNS_nBwfZnHvsG9qotkXOVX-gHqzjzYuyN0pRF06FR_nct9wigrFGx-ELeojdR/embed?start=true&loop=true&delayms=10000" frameborder="0" width="748" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <div class="about1">
+                <div class="abouttext">
+                    <article>Още от 2006г. агенция за събития "EventO" предлага на своите клиенти креативни идеи, за да осъществи мечтаните от тях събития и да остави спомени, към които те се връщат многократно. Скромният ни екип, който се състои от 12 човека, се грижи за атмосферата, доброто настроение, декорацията и запечатването на моментите по време на събитието и прави така, че клиентите да си тръгват с усмивка. Увеличаването на организираните мероприятия наложи разрастването на екипа още в самото начало и така агенцията се превърна в сплотен и усърден екип, който неуморимо се грижи за най-важните моменти от Вашия живот.</article>
+                </div>
+                <div class="aboutimage">
+                    <img src="images/event-organizers.jpeg" />
+                </div>
             </div>
-        <div class="aboutimage">
-            <img src="imgs/event-organizers.jpeg" />
-        </div>
-        </div>
-        <hr>
-        <div class="about1">
-            <div class="abouttext">
-                <article>Нашите партньори в цялата страна си сътрудничат с нас, за да Ви осигурим едно незабравимо събитие от началото до самия край. Всеки въпрос и всяка неяснота се изясняват по време на началната консултация, за да можем да Ви предложим точно това, от което имате нужда. Крайният резултат е винаги очароващ за окото и често надгражда очакванията както на домакините, така и на техните гости. Сред нашите клиенти се срещат такива с разнообразни идеи, които ние превръщаме в реалност, защото за важните моменти в живота се изисква безкомпромистност от наша страна, а Вие само трябва да се насладите на момента.</article>
+            <hr>
+            <div class="about1">
+                <div class="abouttext">
+                    <article>Нашите партньори в цялата страна си сътрудничат с нас, за да Ви осигурим едно незабравимо събитие от началото до самия край. Всеки въпрос и всяка неяснота се изясняват по време на началната консултация, за да можем да Ви предложим точно това, от което имате нужда. Крайният резултат е винаги очароващ за окото и често надгражда очакванията както на домакините, така и на техните гости. Сред нашите клиенти се срещат такива с разнообразни идеи, които ние превръщаме в реалност, защото за важните моменти в живота се изисква безкомпромистност от наша страна, а Вие само трябва да се насладите на момента.</article>
+                </div>
+                <div class="aboutimage">
+                    <img src="images/fooddelivery.jpg" />
+                </div>
             </div>
-            <div class="aboutimage">
-                <img src="imgs/fooddelivery.jpg" />
+            <hr>
+            <div class="about1">
+                <div class="abouttext">
+                    <article>Крайният резултат е винаги очароващ за окото и често надгражда очакванията както на домакините, така и на техните гости. Сред нашите клиенти се срещат такива с разнообразни идеи, които ние превръщаме в реалност, защото за важните моменти в живота се изисква безкомпромистност от наша страна, а Вие само трябва да се насладите на момента.</article>
+                </div>
+                <div class="aboutimage">
+                    <img src="images/event1.jpg" />
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="about1">
-            <div class="abouttext">
-                <article>Крайният резултат е винаги очароващ за окото и често надгражда очакванията както на домакините, така и на техните гости. Сред нашите клиенти се срещат такива с разнообразни идеи, които ние превръщаме в реалност, защото за важните моменти в живота се изисква безкомпромистност от наша страна, а Вие само трябва да се насладите на момента.</article>
+            <hr>
+            <div class="about1">
+                <div class="abouttext">
+                    <article>Нашите усилия са били достойно оценявани безброй пъти, но най-престижната награда получихме на Годишните европейски награди в Женева през 2018-та, където наши събития бяха строго оценявани от жури.</article>
+                </div>
+                <div class="aboutimage">
+                    <img src="images/praward.jpg"/>
+                </div>
             </div>
-            <div class="aboutimage">
-                <img src="imgs/event1.jpg" />
+        </main>
+        <footer class="footer bg-light w-100 p-4 text-center">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-6 col-md-1">
+                    <a href="https://www.instagram.com/eventsplannerdr/?hl=bg">
+                        <img src="images/instagram.svg" alt="Instagram" width="24" height="24">
+                    </a>
+                </div>
+                <div class="col-6 col-md-1">
+                    <a href="https://xn--b1aekbb1acci5f.com/pochivnidni2023.html">Календар 2023</a>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="about1">
-            <div class="abouttext">
-                <article>Нашите усилия са били достойно оценявани безброй пъти, но най-престижната награда получихме на Годишните европейски награди в Женева през 2018-та, където наши събития бяха строго оценявани от жури.</article>
-            </div>
-            <div class="aboutimage">
-                <img src="imgs/praward.jpg"/>
-            </div>
-        </div>
-        <footer>
-            <a href="https://www.instagram.com/eventsplannerdr/?hl=bg">Instagram</a>
-            <a href="https://xn--b1aekbb1acci5f.com/pochivnidni2023.html">Календар 2023</a>
         </footer>
     </body>
 </html>
