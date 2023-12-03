@@ -1,3 +1,5 @@
+/* Reset CSS START */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -22,215 +24,30 @@ body {
     font-family: 'Garamond', serif;
     font-size: 16px;
     text-align: center;
-    width:100%;
-    min-width: 360px;
+    width: 100%;
+    min-width: 390px;
     height: 100vh;
-    background-color:#FFF3DD;
-    color: #5D0F4C;
+    color: black;
 }
 
-.banner {
-    width: 100%;
-    height: 100%;
-    background-image: url(imgs/weddingsea.jpeg);
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(10%);
-    position: relative;
-    z-index: 0;
-}
-
-header {
-    background: rgb(255,243,221);
-    background: radial-gradient(circle, rgba(255,243,221,1) 0%, rgba(226,197,167,1) 64%);
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-footer {
-    background: rgb(255, 243, 221);
-    background: radial-gradient(circle, rgba(255, 243, 221, 1) 0%, rgba(226, 197, 167, 1) 64%);
-    height: 30px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-#startext {
-    position: absolute;
-    text-align: center;
-    padding: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.logoName img {
-    max-height: 150px;
-    max-width: 150px;
-    display: flex;
-    margin: 0 auto;
-    padding: auto;
-    padding-top: 0px;
-    box-sizing: border-box;
-    display: block;
-}
-
-header h1 {
+ul,
+ol {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding: 0px 0px 0px 25px;
-    font-size: 24px;
 }
 
-.menu {
-    order: 2;
-    margin-left: auto;
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.menu ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-}
-
-ul {
-    list-style-type: none;
-    text-align: right;
-    padding: 0px 0px 0px 250px;
-}
-
-li {
-    display: inline;
-    padding: 8px;
-}
-
-.startext{
-    padding: 30px;
-}
-
-.gallery {
-    display:flex;
-}
-
-.gallerypics {
-    position: relative;
-    overflow: hidden;
-}
-
-.gallerypics img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.gallerypics:hover img {
-    transform: scale(1.1);
-}
-
-.about1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.abouttext {
-    flex: 1;
-    padding: 20px;
-    text-align: justify;
-}
-
-.aboutimage {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-}
-
-.aboutimage img {
-    max-width: 100%;
-    height: auto;
-}
-
-.leftcontacts {
-    width: 50%;
-    padding-right: 15px;
-    border-right: 2px solid #333;
-    float: left;
-    text-align: left;
-}
-
-.rightcontacts {
-    width: 45%;
-    float: right; 
-    padding-left: 15px;
-}
-
-input[type=text], textarea {
-    color: #3c3c3c;
-    background-color: #f4e0ba;
-    font-family: Arial, serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    padding: 13px 13px 13px 54px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing:border-box;
-}
-
-textarea {
-    resize: vertical;
-    width: 100%;
-    line-height: 150%;
-    height: 150px;
-}
-
-a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #5D0F4C;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-a:hover {
-    background-color: #3B0A2E;
-}
-
-main {
-    margin-top: 20px;
-}
-
-
- ol {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    }
-
-table {
-      width: 100%;
-      border-collapse:separate;
-      margin-bottom: 20px;
-    }
-
-th, td {
-      border: 1px solid #dddddd;
-      padding: 8px;
-      text-align: left;
-    }
-
-th {
-      font-weight: bold;
-      background-color: #f9f9f9;
-    }
-
-
-
-
+/* Reset CSS END */
