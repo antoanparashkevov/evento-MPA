@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-    <title>EventO | Вход</title>
+    <title>EventO | Редактиране</title>
     <meta name="description" content="Пълно описание на страницата / сайта"/>
     <meta name="author" content="Автор на страницата"/>
     <meta name="keywords" content="ключови,думи, разделени със запетаи"/>
@@ -52,10 +52,10 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="contacts.html">Контакти</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="auth.html">Вход</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" aria-current="page" href="edit.html">Редактиране</a>
                     </li>
                 </ul>
@@ -63,21 +63,47 @@
         </div>
     </nav>
 </header>
+<!--име, фамилия, възраст, адрес, месторабота, позиция, заплата-->
 <main class="container py-4 vh-100">
-    <h3>Вход</h3>
+    <h3>Редактиране</h3>
     <div class="row">
         <div class="col">
-            <form>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Вашият емайл</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Никога няма да споделяме вашият емайл с някой друг.</div>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Име</label>
+                    <input type="text" class="form-control" id="name" placeholder="Георги">
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Вашата парола</label>
-                    <input type="password" class="form-control" id="password">
+                <div class="col-md-6">
+                    <label for="family" class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" id="family" placeholder="Иванов">
                 </div>
-                <button type="submit" class="btn btn-primary">Влизане</button>
+                <div class="col-12">
+                    <label for="address" class="form-label">Адрес</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Генерал Колев">
+                </div>
+                <div class="col-12">
+                    <label for="work_address" class="form-label">Месторабота</label>
+                    <input type="text" class="form-control" id="work_address" placeholder="1234 Генерал Колев">
+                </div>
+                <div class="col-md-6">
+                    <label for="age" class="form-label">Възраст</label>
+                    <input type="number" class="form-control" id="age" placeholder="24">
+                </div>
+                <div class="col-md-6">
+                    <label for="position" class="form-label">Позиция</label>
+                    <input type="text" class="form-control" id="position" placeholder="Адвокат">
+                </div>
+                <div class="col-12">
+                    <label for="salary" class="form-label">Заплата</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" id="salary">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success">Редакция</button>
+                </div>
             </form>
         </div>
     </div>
