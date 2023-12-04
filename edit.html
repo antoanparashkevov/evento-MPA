@@ -19,106 +19,118 @@
     <link rel="icon" href="logoicon.png" type="image/x-icon">
 </head>
 <body>
-<header class="container-fluid p-0">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-0">
-        <div class="container-fluid">
-            <img src="logo.png" alt="Logo" class="img-thumbnail me-2" width="80" height="60"/>
-            <a href="index.html" class="navbar-brand fs-6">Агенция за събития "EventO"</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Начало</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">За нас</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="offers.html">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="future.html">Предстоящи събития</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="gallery.html">Галерия</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="calendar.html">Календар</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="contacts.html">Контакти</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="auth.html">Вход</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="edit.html">Редактиране</a>
-                    </li>
-                </ul>
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary px-0">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand fs-6">
+                    <img
+                            src="logo.png"
+                            alt="Logo"
+                            width="30"
+                            height="24"
+                            class="d-inline-block"
+                    />
+                    Агенция за събития "EventO"
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Начало</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about.html">За нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="offers.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="future.html">Предстоящи събития</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="gallery.html">Галерия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="calendar.html">Календар</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contacts.html">Контакти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="auth.html">Вход</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="edit.html">Редактиране</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container py-4">
+        <h3>Редактиране</h3>
+        <div class="row">
+            <div class="col">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="name" class="form-label">Име</label>
+                        <input type="text" class="form-control" id="name" placeholder="Георги">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="family" class="form-label">Фамилия</label>
+                        <input type="text" class="form-control" id="family" placeholder="Иванов">
+                    </div>
+                    <div class="col-12">
+                        <label for="address" class="form-label">Адрес</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Генерал Колев">
+                    </div>
+                    <div class="col-12">
+                        <label for="work_address" class="form-label">Месторабота</label>
+                        <input type="text" class="form-control" id="work_address" placeholder="1234 Генерал Колев">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="age" class="form-label">Възраст</label>
+                        <input type="number" class="form-control" id="age" placeholder="24">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="position" class="form-label">Позиция</label>
+                        <input type="text" class="form-control" id="position" placeholder="Адвокат">
+                    </div>
+                    <div class="col-12">
+                        <label for="salary" class="form-label">Заплата</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" id="salary">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success">Редакция</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </nav>
-</header>
-<!--име, фамилия, възраст, адрес, месторабота, позиция, заплата-->
-<main class="container py-4 vh-100">
-    <h3>Редактиране</h3>
-    <div class="row">
-        <div class="col">
-            <form class="row g-3">
-                <div class="col-md-6">
-                    <label for="name" class="form-label">Име</label>
-                    <input type="text" class="form-control" id="name" placeholder="Георги">
-                </div>
-                <div class="col-md-6">
-                    <label for="family" class="form-label">Фамилия</label>
-                    <input type="text" class="form-control" id="family" placeholder="Иванов">
-                </div>
-                <div class="col-12">
-                    <label for="address" class="form-label">Адрес</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Генерал Колев">
-                </div>
-                <div class="col-12">
-                    <label for="work_address" class="form-label">Месторабота</label>
-                    <input type="text" class="form-control" id="work_address" placeholder="1234 Генерал Колев">
-                </div>
-                <div class="col-md-6">
-                    <label for="age" class="form-label">Възраст</label>
-                    <input type="number" class="form-control" id="age" placeholder="24">
-                </div>
-                <div class="col-md-6">
-                    <label for="position" class="form-label">Позиция</label>
-                    <input type="text" class="form-control" id="position" placeholder="Адвокат">
-                </div>
-                <div class="col-12">
-                    <label for="salary" class="form-label">Заплата</label>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text">$</span>
-                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)" id="salary">
-                        <span class="input-group-text">.00</span>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-success">Редакция</button>
-                </div>
-            </form>
+    </main>
+    <footer class="container-fluid bg-light py-2 text-center fixed-bottom">
+        <div class="row align-items-center justify-content-center justify-content-md-end">
+            <div class="col-4 col-md-auto">
+                <a href="https://www.instagram.com/eventsplannerdr/?hl=bg">
+                    <img src="images/instagram.svg" alt="Instagram" width="24" height="24">
+                </a>
+            </div>
+            <div class="col-4 col-md-auto">
+                <a href="https://xn--b1aekbb1acci5f.com/pochivnidni2023.html">Календар 2023</a>
+            </div>
         </div>
-    </div>
-</main>
-<footer class="container-fluid bg-light py-2 text-center">
-    <div class="row align-items-center justify-content-center justify-content-md-end">
-        <div class="col-4 col-md-auto">
-            <a href="https://www.instagram.com/eventsplannerdr/?hl=bg">
-                <img src="images/instagram.svg" alt="Instagram" width="24" height="24">
-            </a>
-        </div>
-        <div class="col-4 col-md-auto">
-            <a href="https://xn--b1aekbb1acci5f.com/pochivnidni2023.html">Календар 2023</a>
-        </div>
-    </div>
-</footer>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+    ></script>
 </body>
 </html>
